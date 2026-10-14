@@ -1,0 +1,10 @@
+{
+  "name": "dom-photography",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/generate-gallery.mjs",
+    "check": "node scripts/check-site.mjs"
+  }
+}
