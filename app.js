@@ -54,7 +54,7 @@ function route() {
   state.route = ['home', 'gallery', 'socials', 'about', 'contact'].includes(requested) ? requested : 'home';
   $$('[data-page]').forEach((section) => { section.hidden = section.dataset.page !== state.route; });
   $$('[data-route]').forEach((link) => { link.setAttribute('aria-current', link.dataset.route === state.route ? 'page' : 'false'); });
-  document.title = state.route === 'home' ? 'Dom Photography — photographs by Dominik' : `${state.route[0].toUpperCase()}${state.route.slice(1)} — Dom Photography`;
+  document.title = state.route === 'home' ? 'Dom Photography | Dominik Zmeko - Aviation & Nature' : `${state.route[0].toUpperCase()}${state.route.slice(1)} | Dom Photography | Dominik Zmeko - Aviation & Nature`;
   $('#site-nav').classList.remove('is-open'); $('.menu-toggle').setAttribute('aria-expanded', 'false');
   window.scrollTo({ top: 0, behavior: 'smooth' });
   observeReveals();
