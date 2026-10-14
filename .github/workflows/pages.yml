@@ -34,7 +34,7 @@ jobs:
         run: |
           mkdir -p _site
           sed -i "s|https://YOUR_GITHUB_PAGES_URL|${{ steps.pages.outputs.base_url }}|g" robots.txt sitemap.xml
-          cp index.html styles.css app.js favicon.svg robots.txt sitemap.xml _site/
+          cp index.html styles.css app.js favicon.svg robots.txt sitemap.xml google94cc07ae9a379b91.html _site/
           cp -r public _site/public
           if [ -d photos ]; then cp -r photos _site/photos; fi
       - name: Upload artifact
