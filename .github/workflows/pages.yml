@@ -26,6 +26,8 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
+        with:
+          enablement: true
       - name: Generate gallery manifest
         run: node scripts/generate-gallery.mjs
       - name: Prepare static artifact
