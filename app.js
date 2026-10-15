@@ -47,19 +47,24 @@ function openLightbox(index) {
 }
 function updateLightbox() {
   const photo = state.images[state.lightboxIndex];
+  const attribution = photo.attribution || (photo.filename?.toLowerCase() === 'img_0139.jpeg' ? {
+    author: 'VitVit', authorUrl: 'https://commons.wikimedia.org/wiki/User:VitVit', statement: 'own work',
+    license: 'CC BY-SA 4.0', licenseUrl: 'https://creativecommons.org/licenses/by-sa/4.0',
+    source: 'Wikimedia Commons source', sourceUrl: 'https://commons.wikimedia.org/w/index.php?curid=117047279'
+  } : null);
   $('#lightbox-image').src = photo.src;
   $('#lightbox-image').alt = photo.alt;
   $('#lightbox-caption').textContent = photo.title;
   const credit = $('#lightbox-credit');
   if (credit) {
     credit.replaceChildren();
-    if (photo.attribution) {
+    if (attribution) {
       credit.append('External photograph: ');
-      const author = document.createElement('a'); author.href = photo.attribution.authorUrl; author.textContent = photo.attribution.author; author.target = '_blank'; author.rel = 'noopener noreferrer'; credit.append(author);
-      credit.append(` · ${photo.attribution.statement} · `);
-      const license = document.createElement('a'); license.href = photo.attribution.licenseUrl; license.textContent = photo.attribution.license; license.target = '_blank'; license.rel = 'noopener noreferrer'; credit.append(license);
+      const author = document.createElement('a'); author.href = attribution.authorUrl; author.textContent = attribution.author; author.target = '_blank'; author.rel = 'noopener noreferrer'; credit.append(author);
+      credit.append(` · ${attribution.statement} · `);
+      const license = document.createElement('a'); license.href = attribution.licenseUrl; license.textContent = attribution.license; license.target = '_blank'; license.rel = 'noopener noreferrer'; credit.append(license);
       credit.append(' · ');
-      const source = document.createElement('a'); source.href = photo.attribution.sourceUrl; source.textContent = photo.attribution.source; source.target = '_blank'; source.rel = 'noopener noreferrer'; credit.append(source);
+      const source = document.createElement('a'); source.href = attribution.sourceUrl; source.textContent = attribution.source; source.target = '_blank'; source.rel = 'noopener noreferrer'; credit.append(source);
     }
   }
 }
