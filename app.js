@@ -45,7 +45,24 @@ function openLightbox(index) {
   updateLightbox();
   const lightbox = $('#lightbox'); lightbox.hidden = false; document.body.classList.add('lightbox-open'); $('.lightbox-close').focus();
 }
-function updateLightbox() { const photo = state.images[state.lightboxIndex]; $('#lightbox-image').src = photo.src; $('#lightbox-image').alt = photo.alt; $('#lightbox-caption').textContent = photo.title; }
+function updateLightbox() {
+  const photo = state.images[state.lightboxIndex];
+  $('#lightbox-image').src = photo.src;
+  $('#lightbox-image').alt = photo.alt;
+  $('#lightbox-caption').textContent = photo.title;
+  const credit = $('#lightbox-credit');
+  if (credit) {
+    credit.replaceChildren();
+    if (photo.attribution) {
+      credit.append('External photograph: ');
+      const author = document.createElement('a'); author.href = photo.attribution.authorUrl; author.textContent = photo.attribution.author; author.target = '_blank'; author.rel = 'noopener noreferrer'; credit.append(author);
+      credit.append(` · ${photo.attribution.statement} · `);
+      const license = document.createElement('a'); license.href = photo.attribution.licenseUrl; license.textContent = photo.attribution.license; license.target = '_blank'; license.rel = 'noopener noreferrer'; credit.append(license);
+      credit.append(' · ');
+      const source = document.createElement('a'); source.href = photo.attribution.sourceUrl; source.textContent = photo.attribution.source; source.target = '_blank'; source.rel = 'noopener noreferrer'; credit.append(source);
+    }
+  }
+}
 function closeLightbox() { $('#lightbox').hidden = true; document.body.classList.remove('lightbox-open'); state.lastFocus?.focus(); }
 function moveLightbox(direction) { state.lightboxIndex = (state.lightboxIndex + direction + state.images.length) % state.images.length; updateLightbox(); }
 
