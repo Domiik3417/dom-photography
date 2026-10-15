@@ -5,7 +5,7 @@ const root = process.cwd();
 const photosDir = join(root, 'photos');
 const publicDir = join(root, 'public');
 const allowed = new Set(['.jpg', '.jpeg', '.png', '.webp']);
-const excluded = new Set(['portrait.png', 'square.png', 'img_0139.jpeg']);
+const excluded = new Set(['portrait.png', 'square.png']);
 
 await mkdir(publicDir, { recursive: true });
 let files = [];
