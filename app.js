@@ -4,8 +4,8 @@ const translations = {
     homeEyebrow: 'A small corner on the internet', homeTitle: 'Seeing the world,<br /><em>one frame at a time.</em>', homeIntro: 'Welcome to Dom Photography — a growing collection of moments from the sky, the landscape and everywhere in between.', exploreGallery: 'Explore the gallery',
     selectedFrames: 'Selected frames', fewFavourites: 'A few favourites', seeAll: 'See all photographs', portraitComing: 'Portrait<br />coming soon', me: 'Me', aboutPreviewEyebrow: 'A little about me', aboutPreviewTitle: 'Curious by nature,<br /><em>always looking closer.</em>', aboutPreviewText: 'I’m Dominik, a student from the Czech Republic with a passion for photography, aviation and just how things generally work.', readStory: 'Read my story',
     gearEyebrow: 'The tools behind the frames', myGear: 'My gear', camera: 'Camera', everydayLens: 'Everyday lens', wildlifeLens: 'Wildlife lens', macroLens: 'Macro lens', extender: 'Extender',
-    collection: 'The collection', galleryTitle: 'Photo Gallery', galleryIntro: 'Aircraft, landscapes, wildlife and the details that make a place feel like itself.', findElsewhere: 'Find me elsewhere', socialsTitle: 'Socials', socialsIntro: 'More photographs, short clips and everyday moments live here.',
-    personBehindCamera: 'The person behind the camera', aboutTitle: 'About', squareComing: 'Turnov Square<br />coming soon', turnovSquare: 'Turnov Square', sayHello: 'Say hello', contactTitle: 'Contact', contactIntro: 'For a friendly hello, a question about a photograph, or simply to share something interesting:', emailMe: 'Email Me', externalPhoto: 'External photograph:', ownWork: 'own work', commonsSource: 'Wikimedia Commons source',
+    collection: 'The collection', galleryTitle: 'Photo Gallery', galleryIntro: 'Aircraft, landscapes, wildlife and the details that make a place feel like itself.', galleryCopyright: 'All photographs in this gallery © Dom Photography / Dominik Zmeko.', lightboxCopyright: 'Copyright Dom Photography / Dominik Zmeko - all rights reserved.', findElsewhere: 'Find me elsewhere', socialsTitle: 'Socials', socialsIntro: 'More photographs, short clips and everyday moments live here.',
+    personBehindCamera: 'The person behind the camera', aboutTitle: 'About', squareComing: 'Turnov Square<br />coming soon', turnovSquare: 'Turnov Square', externalPhotoPlaceholder: 'External photograph<br />coming soon', externalPhotoCaption: 'External photograph', photoCredit: 'Photo credit:', sayHello: 'Say hello', contactTitle: 'Contact', contactIntro: 'For a friendly hello, a question about a photograph, or simply to share something interesting:', emailMe: 'Email Me', externalPhoto: 'External photograph:', ownWork: 'own work', commonsSource: 'Wikimedia Commons source',
     emptyEyebrow: 'The collection is growing', emptyTitle: 'Photographs will appear here soon.', emptyText: 'Add JPG, JPEG, PNG or WebP files to the photos folder and run the build.', viewerLabel: 'Photograph viewer', closeViewer: 'Close viewer', previous: 'Previous photograph', next: 'Next photograph', followAlong: 'Follow along'
   },
   cs: {
@@ -13,8 +13,8 @@ const translations = {
     homeEyebrow: 'Malý koutek na internetu', homeTitle: 'Pozorovat svět,<br /><em>jeden snímek za druhým.</em>', homeIntro: 'Vítej na Dom Photography — rostoucí sbírce okamžiků z oblohy, krajiny i všeho mezi tím.', exploreGallery: 'Prozkoumat galerii',
     selectedFrames: 'Vybrané snímky', fewFavourites: 'Několik oblíbených', seeAll: 'Prohlédnout všechny fotografie', portraitComing: 'Portrét<br />již brzy', me: 'Já', aboutPreviewEyebrow: 'Něco málo o mně', aboutPreviewTitle: 'Od přírody zvědavý,<br /><em>vždy hledám další detail.</em>', aboutPreviewText: 'Jsem Dominik, student z České republiky s vášní pro fotografii, letectví a to, jak věci obecně fungují.', readStory: 'Přečíst můj příběh',
     gearEyebrow: 'Nástroje za snímky', myGear: 'Moje vybavení', camera: 'Fotoaparát', everydayLens: 'Objektiv pro každý den', wildlifeLens: 'Objektiv na zvěř', macroLens: 'Makro objektiv', extender: 'Extender',
-    collection: 'Kolekce', galleryTitle: 'Fotogalerie', galleryIntro: 'Letadla, krajiny, zvěř a detaily, díky kterým má místo svou vlastní atmosféru.', findElsewhere: 'Najdi mě jinde', socialsTitle: 'Sociální sítě', socialsIntro: 'Další fotografie, krátká videa a každodenní momenty najdeš zde.',
-    personBehindCamera: 'Člověk za fotoaparátem', aboutTitle: 'O mně', squareComing: 'Turnovské náměstí<br />již brzy', turnovSquare: 'Turnovské náměstí', sayHello: 'Ozvi se', contactTitle: 'Kontakt', contactIntro: 'Pro přátelský pozdrav, otázku k fotografii nebo jen pro sdílení něčeho zajímavého:', emailMe: 'Napsat e-mail', externalPhoto: 'Externí fotografie:', ownWork: 'vlastní dílo', commonsSource: 'zdroj na Wikimedia Commons',
+    collection: 'Kolekce', galleryTitle: 'Fotogalerie', galleryIntro: 'Letadla, krajiny, zvěř a detaily, díky kterým má místo svou vlastní atmosféru.', galleryCopyright: 'Všechny fotografie v této galerii © Dom Photography / Dominik Zmeko.', lightboxCopyright: 'Copyright Dom Photography / Dominik Zmeko - všechna práva vyhrazena.', findElsewhere: 'Najdi mě jinde', socialsTitle: 'Sociální sítě', socialsIntro: 'Další fotografie, krátká videa a každodenní momenty najdeš zde.',
+    personBehindCamera: 'Člověk za fotoaparátem', aboutTitle: 'O mně', squareComing: 'Turnovské náměstí<br />již brzy', turnovSquare: 'Turnovské náměstí', externalPhotoPlaceholder: 'Externí fotografie<br />již brzy', externalPhotoCaption: 'Externí fotografie', photoCredit: 'Autor fotografie:', sayHello: 'Ozvi se', contactTitle: 'Kontakt', contactIntro: 'Pro přátelský pozdrav, otázku k fotografii nebo jen pro sdílení něčeho zajímavého:', emailMe: 'Napsat e-mail', externalPhoto: 'Externí fotografie:', ownWork: 'vlastní dílo', commonsSource: 'zdroj na Wikimedia Commons',
     emptyEyebrow: 'Kolekce roste', emptyTitle: 'Fotografie se zde brzy objeví.', emptyText: 'Přidej do složky photos soubory JPG, JPEG, PNG nebo WebP a spusť sestavení.', viewerLabel: 'Prohlížeč fotografií', closeViewer: 'Zavřít prohlížeč', previous: 'Předchozí fotografie', next: 'Další fotografie', followAlong: 'Sleduj mě'
   }
 };
@@ -99,27 +99,11 @@ function openLightbox(index) {
 }
 function updateLightbox() {
   const photo = state.images[state.lightboxIndex];
-  const isCreditedPhoto = photo.filename?.toLowerCase() === 'img_0139.jpeg' || photo.title?.toLowerCase() === 'img 0139';
-  const attribution = photo.attribution || (isCreditedPhoto ? {
-    author: 'VitVit', authorUrl: 'https://commons.wikimedia.org/wiki/User:VitVit', statement: 'own work',
-    license: 'CC BY-SA 4.0', licenseUrl: 'https://creativecommons.org/licenses/by-sa/4.0',
-    source: 'Wikimedia Commons source', sourceUrl: 'https://commons.wikimedia.org/w/index.php?curid=117047279'
-  } : null);
   $('#lightbox-image').src = photo.src;
   $('#lightbox-image').alt = photo.alt;
   $('#lightbox-caption').textContent = photo.title;
   const credit = $('#lightbox-credit');
-  if (credit) {
-    credit.replaceChildren();
-    if (attribution) {
-      credit.append('External photograph: ');
-      const author = document.createElement('a'); author.href = attribution.authorUrl; author.textContent = attribution.author; author.target = '_blank'; author.rel = 'noopener noreferrer'; credit.append(author);
-      credit.append(` · ${attribution.statement} · `);
-      const license = document.createElement('a'); license.href = attribution.licenseUrl; license.textContent = attribution.license; license.target = '_blank'; license.rel = 'noopener noreferrer'; credit.append(license);
-      credit.append(' · ');
-      const source = document.createElement('a'); source.href = attribution.sourceUrl; source.textContent = attribution.source; source.target = '_blank'; source.rel = 'noopener noreferrer'; credit.append(source);
-    }
-  }
+  if (credit) credit.textContent = translations[state.language].lightboxCopyright;
 }
 function closeLightbox() { $('#lightbox').hidden = true; document.body.classList.remove('lightbox-open'); state.lastFocus?.focus(); }
 function moveLightbox(direction) { state.lightboxIndex = (state.lightboxIndex + direction + state.images.length) % state.images.length; updateLightbox(); }
