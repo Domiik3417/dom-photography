@@ -5,7 +5,7 @@ const root = process.cwd();
 const photosDir = join(root, 'photos');
 const publicDir = join(root, 'public');
 const allowed = new Set(['.jpg', '.jpeg', '.png', '.webp']);
-const excluded = new Set(['portrait.png', 'square.png']);
+const excluded = new Set(['portrait.png', 'square.png', 'img_0139.jpeg']);
 
 await mkdir(publicDir, { recursive: true });
 let files = [];
@@ -20,23 +20,11 @@ const images = files
   .filter((entry) => !excluded.has(entry.name.toLowerCase()))
   .map((entry) => {
     const filename = entry.name;
-    const isCommonsPhoto = filename.toLowerCase() === 'img_0139.jpeg';
     return {
       src: `photos/${encodeURIComponent(filename).replaceAll('%2F', '/')}`,
       filename,
       title: basename(filename, extname(filename)).replace(/[-_]+/g, ' ').replace(/\s+/g, ' ').trim(),
-      alt: `Photography by Dom Photography — ${basename(filename, extname(filename)).replace(/[-_]+/g, ' ').trim()}`,
-      ...(isCommonsPhoto ? {
-        attribution: {
-          author: 'VitVit',
-          authorUrl: 'https://commons.wikimedia.org/wiki/User:VitVit',
-          statement: 'own work',
-          license: 'CC BY-SA 4.0',
-          licenseUrl: 'https://creativecommons.org/licenses/by-sa/4.0',
-          source: 'Wikimedia Commons source',
-          sourceUrl: 'https://commons.wikimedia.org/w/index.php?curid=117047279'
-        }
-      } : {})
+      alt: `Photography by Dom Photography — ${basename(filename, extname(filename)).replace(/[-_]+/g, ' ').trim()}`
     };
   })
   .sort((a, b) => a.filename.localeCompare(b.filename, undefined, { numeric: true, sensitivity: 'base' }));
