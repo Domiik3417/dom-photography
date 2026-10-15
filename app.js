@@ -47,7 +47,8 @@ function openLightbox(index) {
 }
 function updateLightbox() {
   const photo = state.images[state.lightboxIndex];
-  const attribution = photo.attribution || (photo.filename?.toLowerCase() === 'img_0139.jpeg' ? {
+  const isCreditedPhoto = photo.filename?.toLowerCase() === 'img_0139.jpeg' || photo.title?.toLowerCase() === 'img 0139';
+  const attribution = photo.attribution || (isCreditedPhoto ? {
     author: 'VitVit', authorUrl: 'https://commons.wikimedia.org/wiki/User:VitVit', statement: 'own work',
     license: 'CC BY-SA 4.0', licenseUrl: 'https://creativecommons.org/licenses/by-sa/4.0',
     source: 'Wikimedia Commons source', sourceUrl: 'https://commons.wikimedia.org/w/index.php?curid=117047279'
